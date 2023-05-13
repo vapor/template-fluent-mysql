@@ -1,3 +1,4 @@
+import NIOSSL
 import Fluent
 import FluentMySQLDriver
 import Vapor
