@@ -62,7 +62,7 @@ services:
     deploy:
       replicas: 0
   db:
-    image: mysql:8.0
+    image: mysql:8
     volumes:
       - db_data:/var/lib/mysql
     environment:
