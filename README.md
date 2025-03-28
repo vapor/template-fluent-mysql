@@ -1,4 +1,4 @@
-# template-fluent-mysql
+# TemplateFluentMysql
 
 💧 A project built with the Vapor web framework.
 

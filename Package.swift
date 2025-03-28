@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "template-fluent-mysql",
+    name: "TemplateFluentMysql",
     platforms: [
        .macOS(.v13)
     ],
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "App",
+            name: "TemplateFluentMysql",
             dependencies: [
                 .product(name: "Fluent", package: "fluent"),
                 .product(name: "FluentMySQLDriver", package: "fluent-mysql-driver"),
@@ -29,9 +29,9 @@ let package = Package(
             swiftSettings: swiftSettings
         ),
         .testTarget(
-            name: "AppTests",
+            name: "TemplateFluentMysqlTests",
             dependencies: [
-                .target(name: "App"),
+                .target(name: "TemplateFluentMysql"),
                 .product(name: "VaporTesting", package: "vapor"),
             ],
             swiftSettings: swiftSettings

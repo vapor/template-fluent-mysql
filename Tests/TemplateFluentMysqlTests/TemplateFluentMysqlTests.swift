@@ -1,10 +1,10 @@
-@testable import App
+@testable import TemplateFluentMysql
 import VaporTesting
 import Testing
 import Fluent
 
 @Suite("App Tests with DB", .serialized)
-struct AppTests {
+struct TemplateFluentMysqlTests {
     private func withApp(_ test: (Application) async throws -> ()) async throws {
         let app = try await Application.make(.testing)
         do {
